@@ -22,6 +22,19 @@ BBS_species = read.csv("raw_data/breed_bird_survey_species.csv") #species codes 
 BBS_weather = read.csv("raw_data/breed_bird_survey_weather.csv")
 
 #-------EXPLORATORY---------
+BBS_counts$unique_route = paste(BBS_counts$countrynum, BBS_counts$statenum, BBS_counts$route, sep = "-")
+
+ggplot(BBS_counts, aes(x = log(speciestotal))) +
+  geom_histogram()
+
+# Plot number of routes per year
+routes_by_year_df = BBS_counts %>% 
+  group_by(year) %>% 
+  summarize(routes = n_distinct(unique_route))
+
+ggplot(routes_by_year_df, aes(x = year, y = routes)) +
+  geom_point()
+
 # Plot route spatial locations
 ggplot(data = BBS_routes, aes(x = longitude, y = latitude)) +
   borders("world") +
@@ -42,5 +55,25 @@ number_species_lat_df = left_join(number_species_df, BBS_routes, by = c("country
 ggplot(data = number_species_lat_df, aes(x = latitude, y = number_species)) +
   geom_point()
 
+# Plot species body size distributions per route and year (115,966 of these plots max)
+
 #TODO: use number of each species per unique route & year + Thibault et al. method
 #to generate ISD for each species 
+
+#TODO: generate size probability density for each row based on number of
+#individuals of that species and randomly sampling size for each individual
+
+#TODO: filter species by minimum number of individuals at site? 
+
+#TODO: switch plotting methods to ggplot
+
+# Code for a single plot (one route and one year, all species)
+single_route_year_df = BBS_counts %>% 
+  filter(unique_route == "840-2-1", year == 1967, speciestotal > 1)
+
+single_route_year_df$fake_mean_mass = rnorm(nrow(single_route_year_df), mean = 100, sd = 30)
+plot(-2, xlim = c(0, 200), ylim = c(0, 0.5))
+for(i in 1:nrow(single_route_year_df)){
+  individual_masses = rnorm(single_route_year_df$speciestotal[i], mean = single_route_year_df$fake_mean_mass[i], sd = 2)
+  lines(density(individual_masses))
+}

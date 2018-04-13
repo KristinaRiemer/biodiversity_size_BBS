@@ -1,0 +1,20 @@
+Column name,Column description,Data source,Units
+domainName,Name of climate domain where site is located ,internal NEON designation,
+domainID,Identifying code of climate domain,internal NEON designation,
+siteName,Full name of site,internal NEON designation,
+siteID,Four-letter site code,internal NEON designation,
+plotID,Four-letter site code followed by number identifying sampling grid,internal NEON designation,
+decimalLatitude,Latitude,NEON,decimal degrees
+decimalLongitude,Longitude,NEON,decimal degrees
+taxonID,Four-letter species code,internal NEON designation,
+family,Full name of family,NEON,
+individualandtag,"Unique code identifying individual, created from several different NEON designations by our algorithm",,
+hindfootLength,Length of hind foot,NEON,mm
+earLength,Length of ear,NEON,mm
+tailLength,Length of tail,NEON,mm
+totalLength,Length of body,NEON,mm
+weight,Body mass,NEON,g
+logweight,log10 transformation of body mass,NEON,
+sex,Sex code,NEON,
+lifeStage,Life stage code,NEON,
+Pineda_Main_food,Diet classification,"Pineda-Munoz et al. 2014, Proc. B",

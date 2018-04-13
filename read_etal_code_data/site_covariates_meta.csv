@@ -1,0 +1,58 @@
+Column name,Column description,Data source,Units
+siteID,Four-letter site code,internal NEON designation,
+siteName,Full name of site,internal NEON designation,
+decimalLatitude,Latitude of centroid of all sampling grids,NEON,decimal degrees
+decimalLongitude,Longitude of centroid of all sampling grids,NEON,decimal degrees
+elevation,Mean elevation of sampling grids,NEON,m
+bio1,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio2,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio3,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio4,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio5,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio6,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio7,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio8,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio9,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio10,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio11,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio12,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio13,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio14,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio15,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio16,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio17,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio18,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+bio19,"Bioclim variable, 30-year normal, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+sd_elevation,Standard deviation of elevation across all sampling grids,SRTM,m
+cv_bio1,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio2,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio3,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio4,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio5,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio6,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio7,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio8,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio9,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio10,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio11,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio12,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio13,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio14,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio15,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio16,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio17,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio18,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+cv_bio19,"Bioclim variable, CV across 30 years, average value across all sampling grids",PRISM,see worldclim.org/bioclim
+ruggedness,"Terrain Ruggedness Index using 30-m SRTM pixels within each sampling grid, averaged across all sampling grids, calculated with R function raster::terrain()",SRTM,
+LAI,"Annual maximum leaf area index, averaged across all years since 2001 and across entire site",MODIS,
+fPAR,"Annual maximum fPAR, averaged across all years since 2001 and across entire site",MODIS,
+EVI,"Annual maximum EVI, averaged across all years since 2001 and across entire site",MODIS,
+NDVI,"Annual maximum NDVI, averaged across all years since 2001 and across entire site",MODIS,
+NPP,"Total annual net primary productivity, averaged across all years since 2001 and across entire site",MODIS,kg m-2
+GPP,"Total annual gross primary productivity, averaged across all years since 2001 and across entire site",MODIS,kg m-2
+cv_LAI,Spatial coefficient of variation in leaf area index across entire site,MODIS,
+cv_fPAR,Spatial coefficient of variation in fPAR across entire site,MODIS,
+cv_EVI,Spatial coefficient of variation in EVI across entire site,MODIS,
+cv_NDVI,Spatial coefficient of variation in NDVI across entire site,MODIS,
+pc1_productivityheterogeneity,"Principal components axis 1 characterizing site heterogeneity, associated with productivity variables",,
+pc2_topographyheterogeneity,"Principal components axis 2 characterizing site heterogeneity, associated with topographical variables",,

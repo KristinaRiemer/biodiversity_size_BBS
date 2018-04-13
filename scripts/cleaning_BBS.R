@@ -1,7 +1,14 @@
 library(rdataretriever)
 
-#TODO: add if statement to not download BBS if it already exists
-rdataretriever::install("breed-bird-survey", "csv", data_dir = "raw_data/")
+#-------FUNCTIONS---------
+download_BBS = function(raw_file_path){
+  if(!file.exists("raw_data/breed_bird_survey_counts.csv")){
+    rdataretriever::install("breed-bird-survey", "csv", data_dir = "raw_data/")
+  }
+}
+
+#-------RUN FUNCTIONS---------
+download_BBS("raw_data/breed_bird_survey_counts.csv")
 
 #one route = one site? 
 BBS_counts = read.csv("raw_data/breed_bird_survey_counts.csv")
